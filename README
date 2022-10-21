@@ -1,0 +1,41 @@
+ENCE260 - DANCE DANCE REVOLUTION (TETRIS EDITION)
+Created by Jaymee Chen and Bede Nathan
+
+Have the board so that the NAVSWITCH is on the top left corner.
+
+HOW TO START
+1. 'make program' onto both UCFK4 microcontroller boards.
+2. Have both IR transmitters/receivers facing each other.
+3. Press the push button on one of the boards to be the receiver and start the game.
+   The sender will be indicated through the BLUE LED.
+
+HOW TO PLAY
+
+Each player starts off with three lives. Both players are able to control their arrow regardless of their status (sender or receiver). 
+Once the winning/losing screen has finished scrolling, players are able to restart by pressing the push button.
+
+CONTROLS:
+NAVSWITCH UP - rotate arrow clockwise
+NAVSWITCH DOWN - rotate arrow counter-clockwise
+NAVSWITCH LEFT - move arrow left
+NAVSWITCH RIGHT - move arrow right
+NAVSWITCH PUSH - send arrow (only if player is sender)
+
+The player who is the sender first will start off with 2 moves. This will gradually increase as the game progresses. The sender will
+rotate their arrow with the controls above and send arrows to the receiver. The receiver should rotate their arrow so it matches the
+position and rotation of the incoming arrows. If the receiver does not match the incoming arrow, they will lose a life. 
+Once the sender has used all their moves and the receiver has successfully matched all incoming arrows, they will swap roles.
+
+
+
+The directory structure is:
+apps         --- contains a sub-directory for each application
+drivers      --- device driver modules (hardware independent)
+drivers/avr  --- device driver modules specifically for AVR architecture
+drivers/test --- device driver modules for test scaffold
+doc          --- documentation
+etc          --- miscellaneous scripts and makefile templates
+fonts        --- fonts and font creation program
+utils        --- utility modules
+game         --- the game
+
