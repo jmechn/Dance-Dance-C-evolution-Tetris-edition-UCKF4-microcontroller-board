@@ -26,8 +26,6 @@ rotate their arrow with the controls above and send arrows to the receiver. The 
 position and rotation of the incoming arrows. If the receiver does not match the incoming arrow, they will lose a life. 
 Once the sender has used all their moves and the receiver has successfully matched all incoming arrows, they will swap roles.
 
-
-
 The directory structure is:
 apps         --- contains a sub-directory for each application
 drivers      --- device driver modules (hardware independent)
